@@ -1,0 +1,129 @@
+/* 
+====================================
+CUSTOM PROPERTIES
+====================================
+ */
+
+:root {
+	/* color */
+	--clr-red: red;
+	--clr-yellow: rgb(201, 201, 9);
+	--clr-white: white;
+	--clr-green: green;
+
+	/* font size */
+	--fs-800: 2rem;
+	--fs-700: 1.75rem;
+	--fs-600: 1.5rem;
+	--fs-500: 1.25rem;
+	--fs-400: 1rem;
+	--fs-300: 0.75rem;
+	--fs-200: 0.5rem;
+	--fs-100: 0.25rem;
+}
+
+
+/*
+====================================
+CSS RESET
+====================================
+*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/*
+====================================
+LAYOUT
+====================================
+*/
+
+main {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+}
+
+
+
+/* 
+====================================
+UTILITY CLASSES
+====================================
+*/
+
+/* colors */
+.bg-white {
+	background-color: var(--clr-white);
+}
+
+.txt-white {
+	color: var(--clr-white);
+}
+
+.bg-red {
+	background-color: var(--clr-red);
+}
+
+.bg-yellow {
+	background-color: var(--clr-yellow);
+}
+
+.bg-green {
+	background-color: var(--clr-green);
+}
+
+/* typography */
+
+.fs-800 {
+	font-size: var(--fs-800);
+}
+
+.fw-700 {
+	font-weight: 700;
+}
+
+/* 
+====================================
+COMPONENETS
+====================================
+*/
+
+.stopwatch {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 400px;
+	/* min-height: 200px; */
+	padding: 1em 0em;
+	border-radius: 5px;
+	border: 1px solid #422b2d;
+}
+
+.stopwatch__timer {
+	margin-bottom: 2rem;
+}
+
+.stopwatch__buttons__reset {
+	margin-left: 1rem;
+}
+
+.stopwatch__buttons__play-stop,
+.stopwatch__buttons__reset {
+	padding: 0.3em;
+	width: 50px;
+	font-size: var(--fs-600);
+	border: none;
+}
