@@ -1,9 +1,14 @@
 # Stopwatch - using HTML, CSS and Javascript
 
-This is a simple stopwatch component using HTML, CSS and Javascript
+This is a simple stopwatch component built using HTML, CSS and Javascript
 
 ## Table of contents
 
+- [Overview](#overview)
+	- [Features](#features)
+	- [Links](#links)
+- [My process](#my-process)
+	-[Built with](#built-with)
 
 
 ## Overview
